@@ -13,6 +13,7 @@ private:
   string url;
   int visits;
   Page* links[3];
+  int usedLinks;
 
 public:
   Page();
