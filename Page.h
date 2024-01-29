@@ -14,3 +14,4 @@ private:
   int visits;
   Page* links[3];
 };
+#endif // PAGE_H
