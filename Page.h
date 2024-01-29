@@ -30,8 +30,14 @@ public:
   Page* addLink(Page* other);
   // Should store the given pointer into the links array at the next available
   // location and increment the number of usedLinks
+
   string getRandomLink();
+  // Should select a random address from the links the page has and return it.
+
   void visit();
+  // Should add one to the number of visits this page has seen
+
   int getNumVistits();
+  // Returns the number of visits for this page
 };
 #endif // PAGE_H
