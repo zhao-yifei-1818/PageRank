@@ -1,6 +1,9 @@
 #ifndef PAGE_H
 #define PAGE_H
-
+/**
+ * @brief Assignment 3 PAGE Rank
+ * @name YOUR NAME
+ */
 #include <string>
 
 using namespace std;
