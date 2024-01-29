@@ -8,8 +8,7 @@ using namespace std;
 /**
  * @brief 111
  */
-Class Page
-{
+class Page {
 private:
   string url;
   int visits;
