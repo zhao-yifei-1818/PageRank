@@ -47,7 +47,7 @@ void Page::addLink(Page* other)
 
 string Page::getRandomLink()
 {
-  // major steps
+  return "0";
 }
 // Should select a random address from the links the page has and return it.
 
