@@ -31,7 +31,7 @@ public:
   int getNumLinks();
   // Should return the number of usedLinks
 
-  Page* addLink(Page* other);
+  addLink(Page* other);
   // Should store the given pointer into the links array at the next available
   // location and increment the number of usedLinks
 
