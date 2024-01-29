@@ -37,8 +37,7 @@ int Page::getNumLinks()
 Page* Page::addLink(Page* other)
 {
   if (usedLinks < 3) {
-    links[usedLinks] =
-        other;      // store this pointer other to next available location,
+    return other;   // store this pointer other to next available location,
     usedLinks += 1; // increase usedlink.
   }
 }
