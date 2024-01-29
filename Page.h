@@ -35,7 +35,7 @@ public:
   // Should store the given pointer into the links array at the next available
   // location and increment the number of usedLinks
 
-  string getRandomLink();
+  Page* getRandomLink();
   // Should select a random address from the links the page has and return it.
 
   void visit();
