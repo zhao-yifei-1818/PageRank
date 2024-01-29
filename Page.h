@@ -41,7 +41,7 @@ public:
   void visit();
   // Should add one to the number of visits this page has seen
 
-  int getNumVistits();
+  int getNumVisits();
   // Returns the number of visits for this page
 };
 #endif // PAGE_H

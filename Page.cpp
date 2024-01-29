@@ -57,7 +57,7 @@ void Page::visit()
 }
 // Should add one to the number of visits this page has seen
 
-int Page::getNumVistits()
+int Page::getNumVisits()
 {
   return visits;
 }
