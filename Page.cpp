@@ -34,7 +34,7 @@ int Page::getNumLinks()
 }
 // Should return the number of usedLinks
 
-Page::addLink(Page* other)
+void Page::addLink(Page* other)
 {
   if (usedLinks < 3) {
     links[usedLinks] =
