@@ -36,9 +36,11 @@ int Page::getNumLinks()
 
 Page* Page::addLink(Page* other)
 {
-  links[usedLinks] =
-      other;      // store this pointer other to next available location,
-  usedLinks += 1; // increase usedlink.
+  if (usedLinks < 3) {
+    links[usedLinks] =
+        other;      // store this pointer other to next available location,
+    usedLinks += 1; // increase usedlink.
+  }
 }
 // Should store the given pointer into the links array at the next available
 // location and increment the number of usedLinks
@@ -49,8 +51,14 @@ string Page::getRandomLink()
 }
 // Should select a random address from the links the page has and return it.
 
-void visit();
+void Page::visit()
+{
+  visits += 1;
+}
 // Should add one to the number of visits this page has seen
 
-int getNumVistits();
+int Page::getNumVistits()
+{
+  return visits;
+}
 // Returns the number of visits for this page
