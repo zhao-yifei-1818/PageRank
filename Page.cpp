@@ -45,9 +45,9 @@ void Page::addLink(Page* other)
 // Should store the given pointer into the links array at the next available
 // location and increment the number of usedLinks
 
-string Page::getRandomLink()
+Page* Page::getRandomLink()
 {
-  return "0";
+  return nullptr;
 }
 // Should select a random address from the links the page has and return it.
 
