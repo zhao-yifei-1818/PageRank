@@ -4,12 +4,13 @@ CXXFLAGS += -std=c++17 -pedantic -pedantic-errors
 CXXFLAGS += -Wfloat-equal -Wredundant-decls -Wshadow -Wconversion
 
 # list your .h files here
-HEADERS =
+HEADERS = Page.h
 
 # list .cpp files here according to main program, tests, or both
 PROGRAM_FILES = main.cpp
 TEST_FILES = tests.cpp
-SHARED_FILES = 
+INCLUDE_DIRS = .
+SHARED_FILES = Page.cpp
 
 .PHONY: all
 all: program.exe tests.exe
