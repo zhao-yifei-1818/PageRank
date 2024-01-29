@@ -40,6 +40,7 @@ Page* Page::addLink(Page* other)
     return other;   // store this pointer other to next available location,
     usedLinks += 1; // increase usedlink.
   }
+  return 0;
 }
 // Should store the given pointer into the links array at the next available
 // location and increment the number of usedLinks
