@@ -54,12 +54,11 @@ void Page::addLink(Page* other)
 Page* Page::getRandomLink()
 // Should select a random address from the links the page has and return it.
 {
-  if (usedLinks < 3) {
-    return links[rand() % (3 - usedLinks)]; // return a random number, based on
-                                            // slots left.
-    usedLinks += 1;
+  if (usedLinks == 0) { // If there are no links, return nullptr
+    return nullptr;
   }
-  return nullptr;
+  return links[rand() % usedLinks]; // return a random within avalables,
+                                    // depending on their slot
 }
 
 void Page::visit()
