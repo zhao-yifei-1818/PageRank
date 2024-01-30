@@ -1,8 +1,8 @@
+#include "Page.cpp"
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-  cout << "Hello world" << endl;
+  Page page1
 }
