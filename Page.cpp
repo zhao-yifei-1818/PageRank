@@ -37,6 +37,7 @@ int Page::getNumLinks()
 void Page::addLink(Page* other)
 {
   if (usedLinks < 3) {
+    // random a number
     links[usedLinks] =
         other;      // store this pointer other to next available location,
     usedLinks += 1; // increase usedlink.
@@ -47,9 +48,16 @@ void Page::addLink(Page* other)
 
 Page* Page::getRandomLink()
 {
+  if (usedLinks < 3) {
+    return links[rand() % (3 - usedLinks)]; // return a random number, based on
+                                            // slots left.
+    usedLinks += 1 // increase usedlink.
+  }
   return nullptr;
 }
 // Should select a random address from the links the page has and return it.
+// Note you should only return "valid" links. If usedLinks is currently 2, you
+// should only return either link 0 or 1
 
 void Page::visit()
 {
