@@ -20,6 +20,11 @@ Page::Page(string urlValue)
 // Should set url to indicated value, everything else as above
 {
   url = urlValue;
+  visits = 0;
+  for (int i; i < 3; i++) {
+    links[i] = nullptr;
+  };
+  usedLinks = 0;
 }
 
 string Page::getURL()
