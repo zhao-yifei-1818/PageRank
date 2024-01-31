@@ -1,7 +1,7 @@
 
 /**
  * @brief Assignment 3 PAGE Rank
- * @name YOUR NAME
+ * @name Yifei Zhao
  */
 #include "Page.h"
 
