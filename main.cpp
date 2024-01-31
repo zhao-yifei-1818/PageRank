@@ -15,13 +15,18 @@ int main()
   Page* p3 = &page3;
   Page* p4 = &page4;
 
-  page1.addLink(&page2);
-  page1.addLink(&page3);
+  page1.addLink(p1);
+  page1.addLink(p3);
 
-  page2.addLink(&page3);
+  page2.addLink(p3);
 
-  page3.addLink(&page4);
+  page3.addLink(p4);
 
-  page4.addLink(&page1);
-  page4.addLink(&page3);
+  page4.addLink(p1);
+  page4.addLink(p3);
+
+  int random = 1 + (rand() % 100);
+  if Page
+    newPage;
+  Page* np = &newPage;
 }
