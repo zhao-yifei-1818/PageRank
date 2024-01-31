@@ -2,15 +2,13 @@
 #define PAGE_H
 /**
  * @brief Assignment 3 PAGE Rank
- * @name YOUR NAME
+ * @name Yifei Zhao
  */
 #include <string>
 
 using namespace std;
 
-/**
- * @brief 111
- */
+
 class Page {
 private:
   string url;
