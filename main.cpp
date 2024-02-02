@@ -3,7 +3,7 @@
  * @name Yifei Zhao
  */
 #include "Page.cpp"
-#include "Page.h"
+
 #include <cstdlib>
 #include <ctime>
 #include <iomanip>
