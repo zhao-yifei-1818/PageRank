@@ -2,7 +2,7 @@
  * @brief Assignment 3 PAGE Rank
  * @name Yifei Zhao
  */
-#include "Page.cpp"
+#include "Page.h"
 
 #include <cstdlib>
 #include <ctime>
