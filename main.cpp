@@ -7,7 +7,7 @@
 #include <cstdlib>
 #include <ctime>
 #include <iomanip>
-
+#include <iostream>
 using namespace std;
 
 // print function
@@ -22,8 +22,8 @@ void printVisits(Page** pages, int numOfPages)
     percentage =
         (static_cast<double>(pages[i]->getNumVisits()) / 1000000) * 100.0;
     // now cout nice and clear
-    std::cout << "Page " << i + 1 << " contributes " << fixed << setprecision(2)
-              << percentage << "% of visits" << std::endl;
+    cout << "Page " << i + 1 << " contributes " << fixed << setprecision(2)
+         << percentage << "% of visits" << endl;
   }
 }
 
